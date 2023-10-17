@@ -18,6 +18,7 @@
     "vite-plugin-kirby": "^4.0.3"
   },
   "dependencies": {
+    "alpinejs": "^3.13.1",
     "htmx.org": "^1.9.6"
   }
 }
