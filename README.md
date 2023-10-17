@@ -1,15 +1,13 @@
-# 🏗️ dokku-kirby-vite-hat
+# 🏗️ kirby-vite-hat
 
 **This is in early development. Do not expect all features to be implemented yet.**
-
-This is a full-stack web application template that uses Dokku as a self hostes PaaS, Kirby CMS for content management, Vite for bundling the frontend, and includes HTMX, Alpine.js, and Tailwind CSS for building dynamic and responsive web applications.
 
 ## Features
 
 - ⚡️ Uses [Vite](https://vitejs.dev/) with [kirby-vite](https://github.com/arnoson/kirby-vite) plugin
 - 🔄 Live Reloading for Kirby templates, snippets, content, ... changes
 - 📂 [Kirby Cms Public folder structure](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup)
-- 🐋 Project Setup for easy & instant Git based deployment
+- 🐋 Project Setup for easy & instant Git based deployment on a dokku PaaS
 
 ## Table of Contents
 
