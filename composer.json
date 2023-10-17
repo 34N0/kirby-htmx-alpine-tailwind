@@ -7,6 +7,9 @@
     "getkirby/cms": "^3.6",
     "arnoson/kirby-vite": "^4.0.3"
   },
+  "require-dev": {
+    "heroku/heroku-buildpack-php" : "dev-master"
+  },
   "config": {
     "allow-plugins": {
       "getkirby/composer-installer": true
