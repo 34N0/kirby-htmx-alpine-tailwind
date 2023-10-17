@@ -1,13 +1,12 @@
 # 🏗️ kirby-vite-hat
 
-**This is in early development. Do not expect all features to be implemented yet.**
-
 ## Features
 
 - ⚡️ Uses [Vite](https://vitejs.dev/) with [kirby-vite](https://github.com/arnoson/kirby-vite) plugin
 - 🔄 Live Reloading for Kirby templates, snippets, content, ... changes
 - 📂 [Kirby Cms Public folder structure](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup)
 - 🐋 Project Setup for easy & instant Git based deployment on a dokku PaaS
+- 🥰 Htmx, AlpineJs & TailwindCSS for Html driven development
 
 ## Table of Contents
 

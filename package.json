@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "npm run build && npm run server"
   },
-  "author": "arnoson",
+  "author": "eano",
   "license": "MIT",
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
