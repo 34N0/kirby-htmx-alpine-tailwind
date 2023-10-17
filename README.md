@@ -8,18 +8,6 @@
 - 🐋 Project Setup for easy & instant Git based deployment on a dokku PaaS
 - 🥰 Htmx, AlpineJs & TailwindCSS for Html driven development
 
-## Table of Contents
-
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Development](#development)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Getting Started
 
 ### Prerequisites
