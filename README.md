@@ -1,65 +1,82 @@
-# Kirby Vite Multi-Page Kit
+# 🏗️ dokku-kirby-vite-hat
+
+**This is in early development. Do not expect all features to be implemented yet.**
+
+This is a full-stack web application template that uses Dokku as a self hostes PaaS, Kirby CMS for content management, Vite for bundling the frontend, and includes HTMX, Alpine.js, and Tailwind CSS for building dynamic and responsive web applications.
 
 ## Features
 
 - ⚡️ Uses [Vite](https://vitejs.dev/) with [kirby-vite](https://github.com/arnoson/kirby-vite) plugin
-- 📚 Multiple pages
 - 🔄 Live Reloading for Kirby templates, snippets, content, ... changes
-- 📂 [Public folder structure](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup)
+- 📂 [Kirby Cms Public folder structure](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup)
+- 🐋 Project Setup for easy & instant Git based deployment
 
-## Installation
+## Table of Contents
 
-Clone this repository and run:
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Development](#development)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-```
-composer install
-```
+## Getting Started
 
-```
+### Prerequisites
+
+Before you begin, ensure you have the following prerequisites:
+
+- [Node.js](https://nodejs.org/) (>=14.x)
+- [Composer](https://getcomposer.org/)
+- PHP (for Kirby CMS)
+
+- [Dokku](https://dokku.com/) (on production server)
+
+### Installation
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
 npm install
+cp .env.example .env
 ```
+### Development
 
-## Development
+To start a local development server:
 
-Start vite's dev server and a simple php dev server by running:
-
-```
+```bash
 npm run dev
 ```
 
-Visit `localhost:8888` in the browser. Vite's dev server (`localhost:3000`) is only used for serving js, css and assets.
+This command will start both the PHP server for Kirby CMS and the Vite development server.
 
-## Preview
+Access the Kirby CMS admin panel at /panel and the development site at http://localhost:8888.
 
-Get a local production preview by running:
 
-```
-npm run preview
-```
+### Deployment
 
-## Production
+To deploy your application using Dokku, follow these general steps:
 
-Build your optimized frontend assets to `public/dist`:
+1. Set up a Dokku instance and configure it.
+2. Add your Dokku server as a remote:
 
-```
-npm run build
+```bash
+git remote add <remote-app-prod> dokku@your-server:<remote-app>
 ```
 
-## Deployment
+Deploy your application:
 
-### Manually
+```bash
+git push <remote-app-prod> prod
+```
 
-Upload the repository to your web server and point your web server to the repository's `public` folder.
+For more details on deploying with Dokku, refer to the Dokku documentation.
 
-### Rsync
+### Contributing
 
-If you have ssh access you can use rsync to automate the upload/sync.
-
-### Git
-
-You can also deploy your repository with git. Then you have to run the [installation](#installation) steps again on your web server.
-
-## Versioning
-
-Because this is a started kit and not a library it doesn't use semantic versioning.
-If you wan't to migrate an existing project please look for any breaking changes in the release note.
+Feel free to open issues or pull requests for improvements, bug fixes, or new features. We welcome your contributions!
