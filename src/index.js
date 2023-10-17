@@ -1,2 +1,4 @@
 import "./index.css";
-console.log("shared");
+
+import Htmx from 'htmx.org';
+window.htmx = Htmx;
