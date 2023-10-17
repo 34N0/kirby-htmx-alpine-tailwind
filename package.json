@@ -12,6 +12,9 @@
   "author": "arnoson",
   "license": "MIT",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
     "concurrently": "^7.0.1",
     "glob": "^10.3.3",
     "vite": "^3.0.0 || ^4.0.0",

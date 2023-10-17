@@ -14,11 +14,5 @@
   <!-- Include the shared js/css ... -->
   <?= vite()->js('index.js', ['defer' => true]) ?>
   <?= vite()->css('index.js') ?>
-  
-  <!-- ... and the template's js/css (if it exists) -->
-  <?= vite()->js("templates/$template/index.js", ['defer' => true], try: true) ?>
-  <?= vite()->css("templates/$template/index.js", try: true) ?>
-</head>
 
-<body>
-  <?php snippet('menu') ?>
+</head>

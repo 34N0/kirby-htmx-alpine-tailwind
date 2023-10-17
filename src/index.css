@@ -1,4 +1,6 @@
-/* Shared CSS for all pages */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Compagnon Script by Chloé Lozano (http://www.velvetyne.fr/fonts/compagnon/) */
 @font-face {
@@ -7,13 +9,6 @@
   src: url('assets/Compagnon-Bold.woff2');
 }
 
-body {
-  margin: 1em;
+body{
   font-family: Compagnon;
-  font-weight: bold;
-  background-color: yellow;
-}
-
-nav ul {
-  margin-top: 0;
 }
