@@ -14,3 +14,5 @@
   <?= vite()->css('index.js') ?>
 
 </head>
+
+<body>

@@ -6,6 +6,8 @@
   a {
     @apply 
       text-2xl
-      underline;
+      underline
+      select-auto
+      cursor-pointer;
   }
 }
