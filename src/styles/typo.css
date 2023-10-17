@@ -1,0 +1,11 @@
+@layer base {
+  h1 {
+    @apply text-5xl;
+  }
+
+  a {
+    @apply 
+      text-2xl
+      underline;
+  }
+}

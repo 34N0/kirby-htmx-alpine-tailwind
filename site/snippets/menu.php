@@ -1,7 +1,7 @@
 <nav>
   <ul>
     <?php foreach($site->children() as $child): ?>
-    <li>
+    <li class="list-inside list-disc">
       <a href="<?= $child->url() ?>"><?= $child->title() ?></a>
     </li>
     <?php endforeach ?>

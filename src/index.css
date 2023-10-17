@@ -1,6 +1,10 @@
+@import url('styles/typo.css');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /* Compagnon Script by Chloé Lozano (http://www.velvetyne.fr/fonts/compagnon/) */
 @font-face {
@@ -9,6 +13,8 @@
   src: url('assets/Compagnon-Bold.woff2');
 }
 
-body{
-  font-family: Compagnon;
+@layer base {
+  body{
+    font-family: Compagnon;
+  }
 }

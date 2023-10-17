@@ -1,5 +1,3 @@
-<?= $template = $page->template() ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
