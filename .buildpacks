@@ -1,2 +1,2 @@
 https://github.com/heroku/heroku-buildpack-nodejs
-vendor/heroku/heroku-buildpack-php
+vendor/bin/heroku-buildpack-php-apache2
