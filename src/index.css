@@ -1,5 +1,5 @@
-@import url('styles/base.css');
-@import url('styles/typo.css');
+@import url('css/base.css');
+@import url('css/typo.css');
 
 @tailwind base;
 @tailwind components;
