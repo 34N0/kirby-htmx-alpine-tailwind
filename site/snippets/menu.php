@@ -7,5 +7,14 @@
       </a>
     </li>
     <?php endforeach ?>
+    <li class="
+      list-inside
+      text-2xl
+      cursor-pointer
+      select-none
+      no-script" 
+      :class="{ 'inline-block': true }"
+      @click="$store.darkMode.toggle()"
+      >Darkmode</li>
   </ul>
 </nav>

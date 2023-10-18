@@ -5,6 +5,7 @@ module.exports = {
     "site/templates/**/*.php",
     // "site/plugins/custom/**/*.php",
   ],
+  darkMode: 'class',
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),

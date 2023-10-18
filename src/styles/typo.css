@@ -1,4 +1,7 @@
 @layer base {
+
+  h1, a, li { @apply dark:text-gray-400; }
+
   h1 {
     @apply text-5xl;
   }
