@@ -10,12 +10,13 @@
   <meta name="htmx-config" content='{"historyCacheSize": 0, "refreshOnHistoryMiss": false}'>
   
   <!-- security headers according to owasp recommendations -->
-  <?php /*
+  <?php 
     header('X-Frame-Options: DENY');
     header('X-XSS-Protection: 0');
     header('X-Content-Type-Options: nosniff');
     header('Referrer-Policy: strict-origin-when-cross-origin');
     header('Content-Type: text/html; charset=UTF-8');
+    /*
     header('Strict-Transport-Security: max-age=63072000; includeSubDomains; preload');
     header('HTTP Cross-Origin-Opener-Policy: same-origin');
     header('Cross-Origin-Embedder-Policy: require-corp');
