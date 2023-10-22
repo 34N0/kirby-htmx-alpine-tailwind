@@ -10,7 +10,7 @@
   <meta name="htmx-config" content='{"historyCacheSize": 0, "refreshOnHistoryMiss": false}'>
   
   <!-- security headers according to owasp recommendations -->
-  <?php
+  <?php /*
     header('X-Frame-Options: DENY');
     header('X-XSS-Protection: 0');
     header('X-Content-Type-Options: nosniff');
@@ -25,7 +25,8 @@
 
     // csp alpine currently requires unsafe-eval workaround
     header("Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval'; connect-src 'self'; img-src 'self'; style-src 'self'; frame-ancestors 'self'; form-action 'self';")
-  ?>
+  */
+    ?>
   
   <noscript>
     <style>
