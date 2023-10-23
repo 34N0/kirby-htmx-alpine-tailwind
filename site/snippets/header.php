@@ -16,12 +16,13 @@
     header('X-Content-Type-Options: nosniff');
     header('Referrer-Policy: strict-origin-when-cross-origin');
     header('Content-Type: text/html; charset=UTF-8');
-    header('Strict-Transport-Security: max-age=63072000; includeSubDomains; preload');
+    header('Strict-Transport-Security: max-age=31536000');
+    header(' includeSubDomains; preload');
+    /*
     header('HTTP Cross-Origin-Opener-Policy: same-origin');
     header('Cross-Origin-Embedder-Policy: require-corp');
     header('Cross-Origin-Resource-Policy: same-site');
     header('Permissions-Policy: geolocation=(), camera=(), microphone=()');
-    /*
     header('Server: webserver');
 
     // csp alpine currently requires unsafe-eval workaround
