@@ -21,18 +21,17 @@
     header('Cross-Origin-Resource-Policy: same-site');
     header('Cross-Origin-Opener-Policy: same-origin');
     header('Permissions-Policy: geolocation=(), camera=(), microphone=()');
-    header('Server: webserver');
 
     // csp alpine currently requires unsafe-eval workaround
-    header("Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval'; connect-src 'self'; img-src 'self'; style-src 'self'; frame-ancestors 'self'; form-action 'self';")
+    // also this does currently not work in the dev script so disable for dev
+    header("Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval'; connect-src 'self'; img-src 'self'; frame-ancestors 'self'; form-action 'self'; style-src 'self';")
     ?>
   
-  <noscript>
-    <style>
-        .no-script {display: none !important;}
-    </style>
-  </noscript>
-
   <title>Html Driven ❤️</title>
+  <noscript>
+    <!--<style>
+        .no-script {display: none !important;}
+    </style>-->
+  </noscript>
 </head>
 <body :class="{ 'dark': $store.darkMode.on }" x-data>
