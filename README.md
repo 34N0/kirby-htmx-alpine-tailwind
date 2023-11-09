@@ -1,4 +1,4 @@
-# 🏗️ kirby-vite-hat
+# 🏗️ kirby-htmx-alpine-tailwind 
 
 ## Features
 
