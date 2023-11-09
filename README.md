@@ -1,12 +1,14 @@
-# 🏗️ kirby-htmx-alpine-tailwind 
+# 🏗️ kirby-vite-htmx-alpine-tailwind
 
 ## Features
 
-- ⚡️ Uses [Vite](https://vitejs.dev/) with [kirby-vite](https://github.com/arnoson/kirby-vite) plugin
-- 🔄 Live Reloading for Kirby templates, snippets, content, ... changes
+- ⚡️ Uses [Vite](https://vitejs.dev/) tooling with [kirby-vite](https://github.com/arnoson/kirby-vite) plugin.
+- 🔄 Live Reloading for Kirby templates, snippets, content, ... changes.
 - 📂 [Kirby Cms Public folder structure](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup)
-- 🐋 Project Setup for easy & instant Git based deployment on a dokku PaaS
-- 🥰 Htmx, AlpineJs & TailwindCSS for Html driven development
+- 🥰 Htmx, AlpineJs & TailwindCSS for Html driven development.
+- 🌎 Fully managed site template including kirby flat file db engine.
+- 🍀 Git Based CI including git based production backups.
+- 🐋 easy & instant Git based deployment on a dokku PaaS.
 
 ## Getting Started
 
