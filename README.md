@@ -1,4 +1,4 @@
-# 🏗️ kirby-vite-htmx-alpine-tailwind
+# 🐱 KHAT Stack
 
 ## Features
 
