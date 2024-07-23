@@ -1,0 +1,16 @@
+@layer base {
+
+  h1, a, li { @apply dark:text-gray-400; }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  a {
+    @apply 
+      text-2xl
+      underline
+      select-auto
+      cursor-pointer;
+  }
+}

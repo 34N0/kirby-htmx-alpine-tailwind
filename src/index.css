@@ -1,3 +1,10 @@
+@import url('styles/base.css');
+@import url('styles/typo.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Shared CSS for all pages */
 
 /* Compagnon Script by Chloé Lozano (http://www.velvetyne.fr/fonts/compagnon/) */

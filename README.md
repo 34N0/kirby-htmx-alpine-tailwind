@@ -1,79 +1,69 @@
-# Kirby Vite Multi-Page Kit
+# 🐱 KHAT Stack
 
 ## Features
 
-- ⚡️ Uses [Vite](https://vitejs.dev/) with [kirby-vite](https://github.com/arnoson/kirby-vite) plugin
-- 📚 Multiple pages
-- 🔄 Live Reloading for Kirby templates, snippets, content, ... changes
-- 📂 [Public folder structure](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup)
+- ⚡️ Uses [Vite](https://vitejs.dev/) tooling with [kirby-vite](https://github.com/arnoson/kirby-vite) plugin.
+- 🔄 Live Reloading for Kirby templates, snippets, content, ... changes.
+- 📂 [Kirby Cms Public folder structure](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup)
+- 🥰 Htmx, AlpineJs & TailwindCSS for Html driven development.
+- 🌎 Fully managed site template including kirby flat file db engine.
+- 🍀 Git Based CI including git based production backups.
+- 🐋 easy & instant Git based deployment on a dokku PaaS.
 
-## Installation
+## Getting Started
 
-Clone this repository and run:
+### Prerequisites
 
-```
-composer install
-```
+Before you begin, ensure you have the following prerequisites:
 
-```
+- [Node.js](https://nodejs.org/) (>=14.x)
+- [Composer](https://getcomposer.org/)
+- PHP (for Kirby CMS)
+
+- [Dokku](https://dokku.com/) (on production server)
+
+### Installation
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
 npm install
+cp .env.example .env
 ```
+### Development
 
-## Development
+To start a local development server:
 
-Start vite's dev server and a simple php dev server by running:
-
-```
+```bash
 npm run dev
 ```
 
-Visit `localhost:8888` in the browser. Vite's dev server (`localhost:5173`) is only used for serving js, css and assets.
+This command will start both the PHP server for Kirby CMS and the Vite development server.
 
-## Preview
+Access the Kirby CMS admin panel at /panel and the development site at http://localhost:8888.
 
-Get a local production preview by running:
 
-```
-npm run preview
-```
+### Deployment
 
-## Production
+To deploy your application using Dokku, follow these general steps:
 
-Build your optimized frontend assets to `public/dist`:
+1. Set up a Dokku instance and configure it.
+2. Add your Dokku server as a remote:
 
-```
-npm run build
+```bash
+git remote add <remote-app-prod> dokku@your-server:<remote-app>
 ```
 
-## File Nesting
+Deploy your application:
 
-If your are using VS Code, you can add file nesting to visually organize your assets in the editor's file explorer:
-
-```json
-// .vscode/settings.json
-{
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.patterns": {
-    "*.js": "${capture}.css"
-  },
-}
+```bash
+git push <remote-app-prod> prod
 ```
 
-## Deployment
+For more details on deploying with Dokku, refer to the Dokku documentation.
 
-### Manually
+### Contributing
 
-Upload the repository to your web server and point your web server to the repository's `public` folder.
-
-### Rsync
-
-If you have ssh access you can use rsync to automate the upload/sync.
-
-### Git
-
-You can also deploy your repository with git. Then you have to run the [installation](#installation) steps again on your web server.
-
-## Versioning
-
-Because this is a started kit and not a library it doesn't use semantic versioning.
-If you wan't to migrate an existing project please look for any breaking changes in the release note.
+Feel free to open issues or pull requests for improvements, bug fixes, or new features. We welcome your contributions!
