@@ -33,5 +33,14 @@
         .no-script {display: none !important;}
     </style>-->
   </noscript>
+  <title>Kirby Vite Multi-Page</title>
+
+  <!-- Include the shared js/css ... -->
+  <?= vite()->js('index.js', ['defer' => true]) ?>
+  <?= vite()->css('index.css') ?>
+  
+  <!-- ... and the template's js/css (if it exists) -->
+  <?= vite()->js("templates/{{ page.template }}.js", ['defer' => true], try: true) ?>
+  <?= vite()->css("templates/{{ page.template }}.css", try: true) ?>
 </head>
 <body :class="{ 'dark': $store.darkMode.on }" x-data>

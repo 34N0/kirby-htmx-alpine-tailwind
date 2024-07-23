@@ -1,3 +1,5 @@
+console.log("shared");
+
 import "./index.css";
 
 import Htmx from 'htmx.org';
