@@ -8,7 +8,7 @@
     "arnoson/kirby-vite": "^5.0.0"
   },
   "require-dev": {
-    "heroku/heroku-buildpack-php" : "dev-master"
+    "heroku/heroku-buildpack-php" : "dev-main"
   },
   "config": {
     "allow-plugins": {
