@@ -1,6 +1,6 @@
 # 🐱 kirby-htmx-alpine-tailwind
 
-This template is a scaffold for fully managed sites with Kirby CMS as the backend and modern lightweight clients leveraging [Htmx](https://htmx.org/) and [AlpineJs](https://alpinejs.dev/). The stack is designed to function without JavaScript to offer strong backward compatibility and functionality with high-security clients (i.e., TOR Browser's highest security setting). To fully understand the security benefits and limitations of this template, research the involved technologies.
+This template is a scaffold for fully managed sites with [Kirby CMS](https://getkirby.com/) as the backend and modern lightweight clients leveraging [Htmx](https://htmx.org/) and [AlpineJs](https://alpinejs.dev/).
 
 ## Features
 
@@ -59,11 +59,28 @@ Run the build script and copy the content of this repository into the endpoint d
 
 This repository provides a configured [.htaccess](public/.htaccess) file. Using Nginx or a different web server is possible but not recommended.
 
-### Security Headers
+### Security
+
+The site is designed to not loose any functionality with JavaScript disabled to offer strong backward compatibility and functionality with high-security clients (i.e., TOR Browser's highest security setting). To fully understand the security benefits and limitations of this template, research the involved technologies.
+
+#### Headers
 
 With the `debug` setting disabled in the Kirby configuration, the site will set hardened security HTTP headers.
 
 You can edit the headers in the [header.php snippet](site/snippets/header.php).
+
+#### Panel
+
+It's further recommended to setup the path to the administration panel to something else than `/panel`in the kirby configuration. 
+
+The recommended panel setup (3FA) would be:
+1. [Secret path to the panel](https://getkirby.com/docs/reference/system/options/panel#move-the-panel-to-a-different-url)
+2. Strong password
+3. [Additional Authentication Factors (Email, TOTP)](https://getkirby.com/docs/guide/authentication/2fa)
+
+##### Permissions
+
+Setup strong user permissions setup in the [administration panel](https://getkirby.com/docs/guide/users/permissions).
 
 ### SMTP
 
