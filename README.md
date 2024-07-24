@@ -17,10 +17,8 @@
 Before you begin, ensure you have the following prerequisites:
 
 - [Node.js](https://nodejs.org/) (>=14.x)
+- PHP 8.2 (for Kirby CMS)
 - [Composer](https://getcomposer.org/)
-- PHP (for Kirby CMS)
-
-- [Dokku](https://dokku.com/) (on production server)
 
 ### Installation
 
@@ -30,7 +28,7 @@ Before you begin, ensure you have the following prerequisites:
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
 npm install
-cp .env.example .env
+composer install
 ```
 ### Development
 
@@ -42,10 +40,24 @@ npm run dev
 
 This command will start both the PHP server for Kirby CMS and the Vite development server.
 
+#### Backend
+
 Access the Kirby CMS admin panel at /panel and the development site at http://localhost:8888.
 
+## Deployment
 
-### Deployment
+### Requirements
+
+Run the build script and copy the content of this repository into the endpoint directory. FIY the site sets Http headers.
+
+- PHP v8.2
+- locally running SMTP server (like postfix)
+
+### Apache
+
+This repository provides a configured .htaccess file. Using Nginx or a different Webserver is not impossible but not recommended.
+
+### Dokku
 
 To deploy your application using Dokku, follow these general steps:
 
